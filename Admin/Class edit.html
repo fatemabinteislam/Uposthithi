@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#fee6ae] min-h-screen p-4 font-sans text-[#1A1A3D]">
-
-    <div class="flex gap-4 max-w-[1440px] mx-auto items-stretch blur-md pointer-events-none select-none">
+<!-- BG blur effect -->
+    <div class="fixed inset-0 flex gap-4 max-w-[1440px] mx-auto items-stretch blur-sm pointer-events-none select-none">
         
         <aside class="w-64 flex flex-col gap-2 p-2 bg-[#FDCE9A]/20 border-2 border-[#FCB87A] rounded-2xl">
             
@@ -146,6 +146,7 @@
         </main>
     </div>
 
+    <!-- Edit class -->
     <div class="absolute inset-0 flex items-center justify-center p-4">
 
     <div class="bg-[#FED5AE] border-2 border-[#FCB87A] rounded-xl p-6 w-full max-w-[750px] shadow-2xl relative">
@@ -160,24 +161,56 @@
 
         <div class="flex items-center justify-between gap-2 mb-8 mt-4 text-[#1A1A3D]">
             
+            <!-- Class Dropdown -->
             <div class="flex items-center gap-1 whitespace-nowrap">
                 <label class="text-[12px] font-bold">Class :</label>
-                <input type="text" value="05" class="w-14 bg-white rounded-md h-8 px-2 border border-gray-200 text-center outline-none focus:ring-1 focus:ring-[#FF5E1E] text-slate-400 font-bold">
+                <select class="w-14 bg-white rounded-md h-8 px-2 border border-gray-200 text-center outline-none focus:ring-1 focus:ring-[#FF5E1E] text-slate-400 font-bold">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                </select>
             </div>
 
+            <!-- Section Dropdown -->
             <div class="flex items-center gap-1 whitespace-nowrap">
                 <label class="text-[12px] font-bold">Section :</label>
-                <input type="text" value="Sunflower" class="w-32 bg-white rounded-md h-8 px-2 border border-gray-200 text-center outline-none focus:ring-1 focus:ring-[#FF5E1E] text-slate-400 font-bold">
+                <select class="w-32 bg-white rounded-md h-8 px-2 border border-gray-200 text-center outline-none focus:ring-1 focus:ring-[#FF5E1E] text-slate-400 font-bold">
+                    <option value="Rose">Rose</option>
+                    <option value="Lotus">Lotus</option>
+                    <option value="Sunflower" selected>Sunflower</option>
+                    <option value="Tulip">Tulip</option>
+                    <option value="Daisy">Daisy</option>
+                </select>
             </div>
 
+            <!-- Shift Dropdown -->
             <div class="flex items-center gap-1 whitespace-nowrap">
                 <label class="text-[12px] font-bold">Shift :</label>
-                <input type="text" value="Morning" class="w-24 bg-white rounded-md h-8 px-2 border border-gray-200 text-center outline-none focus:ring-1 focus:ring-[#FF5E1E] text-slate-400 font-bold">
+                <select class="w-24 bg-white rounded-md h-8 px-1 border border-gray-200 text-center outline-none focus:ring-1 focus:ring-[#FF5E1E] text-slate-400 font-bold">
+                    <option value="Morning"  >Morning</option>
+                    <option value="Afternoon">Day</option>
+                </select>
             </div>
 
+            <!-- Total Seat Number Dropdown -->
             <div class="flex items-center gap-1 whitespace-nowrap">
                 <label class="text-[12px] font-bold">Total Seat Number :</label>
-                <input type="text" value="65" class="w-16 bg-white rounded-md h-8 px-2 border border-gray-200 text-center outline-none focus:ring-1 focus:ring-[#FF5E1E] text-slate-400 font-bold">
+                <select class="w-16 bg-white rounded-md h-8 px-2 border border-gray-200 text-center outline-none focus:ring-1 focus:ring-[#FF5E1E] text-slate-400 font-bold">
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="65">65</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                </select>
             </div>
         </div>
 

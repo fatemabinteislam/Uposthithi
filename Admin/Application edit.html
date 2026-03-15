@@ -8,7 +8,8 @@
 </head>
 <body class="bg-[#fee6ae] min-h-screen p-4 font-sans text-[#1A1A3D]">
 
-    <div class="flex gap-4 max-w-[1440px] mx-auto items-stretch blur-sm pointer-events-none select-none">
+    <!-- BG blur-->
+    <div class="fixed inset-0 flex gap-4 max-w-[1440px] mx-auto items-stretch blur-sm pointer-events-none select-none">
         
         <aside class="w-64 flex flex-col gap-2 p-2 bg-[#FDCE9A]/20 border-2 border-[#FCB87A] rounded-2xl">
             <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-3 flex flex-col items-center">
@@ -83,7 +84,8 @@
             </div>
 
             </aside>
-<main class="max-w-[1000px] mx-auto bg-[#FDCE9A]/20 border-2 border-[#FCB87A] rounded-2xl p-8 min-h-[90vh] flex flex-col">
+
+         <main class="max-w-[1000px] mx-auto bg-[#FDCE9A]/20 border-2 border-[#FCB87A] rounded-2xl p-8 min-h-[90vh] flex flex-col">
         
         <div class="text-center mb-8">
             <h2 class="text-[#FF5E1E] text-xl font-bold border-b-2 border-[#FF5E1E] inline-block px-12 pb-1">
@@ -158,78 +160,79 @@
     </main>
         
     </div>
-         
-    <div class="absolute inset-0 flex items-center justify-center p-4">
-
-    <div class="bg-[#FED5AE] border-2 border-[#FCB87A] rounded-xl p-6 w-full max-w-[700px] shadow-2xl relative">
-        
-        <div class="absolute top-2 right-2">
-            <button class="text-[#FF5E1E] bg-white rounded-sm border border-[#FCB87A] p-0.5 hover:bg-gray-100 transition-colors shadow-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" class="w-3 h-3">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-            </button>
-        </div>
-
-        <div class="text-center mb-4">
-            <h2 class="text-[#FF5E1E] text-base font-bold border-b border-[#FF5E1E] inline-block px-10 pb-0.5">
-                Academy (Applications)
-            </h2>
-        </div>
-
-        <div class="space-y-2.5 text-[11px] font-bold text-[#1A1A3D]">
+       
+    <!-- Application Edit pop up part -->
+     
+    <div class="fixed inset-0 flex items-center justify-center bg-black/20 z-50">
+        <div class="bg-[#FED5AE] border-2 border-[#FCB87A] rounded-xl p-6 w-full max-w-[700px] shadow-2xl relative">
             
-            <p><span class="inline-block w-16">From</span> : Alif Anam (ID: 0175, Class:01, Section: Lotus)</p>
-            <p><span class="inline-block w-16">Subject</span> : Application for app</p>
-            <div class="flex gap-1">
-                <span class="inline-block w-16 shrink-0">Body</span> :
-                <p class="font-semibold text-slate-700 leading-tight">
-                    I want to upload my app in playstore at any cost....................<span class="text-gray-400 font-bold">see more</span>
-                </p>
+            <div class="absolute top-2 right-2">
+                <button class="text-[#FF5E1E] bg-white rounded-sm border border-[#FCB87A] p-0.5 hover:bg-gray-100 transition-colors shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" class="w-3 h-3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </div>
 
-            <div class="grid grid-cols-4 gap-3 py-2 px-1">
+            <div class="text-center mb-4">
+                <h2 class="text-[#FF5E1E] text-base font-bold border-b border-[#FF5E1E] inline-block px-10 pb-0.5">
+                    Academy (Applications)
+                </h2>
+            </div>
+
+            <div class="space-y-2.5 text-[11px] font-bold text-[#1A1A3D]">
+                
+                <p><span class="inline-block w-16">From</span> : Alif Anam (ID: 0175, Class:01, Section: Lotus)</p>
+                <p><span class="inline-block w-16">Subject</span> : Application for app</p>
+                <div class="flex gap-1">
+                    <span class="inline-block w-16 shrink-0">Body</span> :
+                    <p class="font-semibold text-slate-700 leading-tight">
+                        I want to upload my app in playstore at any cost....................<span class="text-gray-400 font-bold">see more</span>
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-4 gap-3 py-2 px-1">
+                    <div class="space-y-2">
+                        <div class="bg-white border border-gray-300 rounded p-1 h-36 overflow-hidden">
+                            <img src="" alt="Doc" class="w-full h-full object-cover opacity-80">
+                        </div>
+                        <div class="flex justify-center gap-2">
+                            <button class="bg-white border border-[#FCB87A] p-1 rounded-md text-[#FF5E1E] hover:bg-orange-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.644m19.928 0a1.012 1.012 0 0 1 0 .644m-17.89 1.151C3.411 11.233 6.331 9.5 12 9.5c5.669 0 8.589 1.733 10.854 3.973m-17.89 0C3.411 13.767 6.331 15.5 12 15.5c5.669 0 8.589-1.733 10.854-3.973M12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" />
+                                </svg>
+                            </button>
+                            <button class="bg-white border border-[#FCB87A] p-1 rounded-md text-[#FF5E1E] hover:bg-orange-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M7.5 12l4.5 4.5m0 0 4.5-4.5M12 3v13.5" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="space-y-2">
-                    <div class="bg-white border border-gray-300 rounded p-1 h-36 overflow-hidden">
-                        <img src="" alt="Doc" class="w-full h-full object-cover opacity-80">
+                    <div class="flex items-center gap-4">
+                        <label class="w-20">Reply :</label>
+                        <input type="text" placeholder="Massage" class="flex-1 bg-white border border-[#FCB87A] rounded-md h-10 px-3 outline-none font-medium placeholder:text-gray-300">
                     </div>
-                    <div class="flex justify-center gap-2">
-                        <button class="bg-white border border-[#FCB87A] p-1 rounded-md text-[#FF5E1E] hover:bg-orange-50">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.644m19.928 0a1.012 1.012 0 0 1 0 .644m-17.89 1.151C3.411 11.233 6.331 9.5 12 9.5c5.669 0 8.589 1.733 10.854 3.973m-17.89 0C3.411 13.767 6.331 15.5 12 15.5c5.669 0 8.589-1.733 10.854-3.973M12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" />
-                            </svg>
-                        </button>
-                        <button class="bg-white border border-[#FCB87A] p-1 rounded-md text-[#FF5E1E] hover:bg-orange-50">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M7.5 12l4.5 4.5m0 0 4.5-4.5M12 3v13.5" />
-                            </svg>
-                        </button>
+                    <div class="flex items-center gap-4">
+                        <label class="w-20">Reply From :</label>
+                        <input type="text" value="" class="flex-1 bg-white border border-[#FCB87A] rounded-md h-7 px-3 outline-none font-medium text-slate-400">
                     </div>
                 </div>
+
+                <div class="flex justify-center gap-4 pt-4">
+                    <button class="bg-white border border-[#FCB87A] text-[#1A1A3D] px-8 py-1.5 rounded-md font-bold text-[11px] hover:bg-gray-50 shadow-sm transition-all">
+                        Sent & Close Application
+                    </button>
+                    <button class="bg-white border border-[#FCB87A] text-[#1A1A3D] px-12 py-1.5 rounded-md font-bold text-[11px] hover:bg-gray-50 shadow-sm transition-all">
+                        Download
+                    </button>
                 </div>
 
-            <div class="space-y-2">
-                <div class="flex items-center gap-4">
-                    <label class="w-20">Reply :</label>
-                    <input type="text" placeholder="Massage" class="flex-1 bg-white border border-[#FCB87A] rounded-md h-10 px-3 outline-none font-medium placeholder:text-gray-300">
-                </div>
-                <div class="flex items-center gap-4">
-                    <label class="w-20">Reply From :</label>
-                    <input type="text" value="" class="flex-1 bg-white border border-[#FCB87A] rounded-md h-7 px-3 outline-none font-medium text-slate-400">
-                </div>
             </div>
-
-            <div class="flex justify-center gap-4 pt-4">
-                <button class="bg-white border border-[#FCB87A] text-[#1A1A3D] px-8 py-1.5 rounded-md font-bold text-[11px] hover:bg-gray-50 shadow-sm transition-all">
-                    Sent & Close Application
-                </button>
-                <button class="bg-white border border-[#FCB87A] text-[#1A1A3D] px-12 py-1.5 rounded-md font-bold text-[11px] hover:bg-gray-50 shadow-sm transition-all">
-                    Download
-                </button>
-            </div>
-
         </div>
     </div>
-</div>
 </body>
 </html>
