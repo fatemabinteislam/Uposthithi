@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uposthithi - Student Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-[#fee6ae] min-h-screen p-4 font-sans text-[#1A1A3D]">
+
+    <!-- Blur Bg -->
+    <div class=" fixed inset-0 flex gap-4 max-w-[1440px] mx-auto items-stretch blur-sm pointer-events-none select-none">
+        <!-- Sidebar left one Academic,permission,class routing,Exam,Notice,Payroll -->
+        <aside class="w-64 flex flex-col gap-2 p-2 bg-[#FDCE9A]/20 border-2 border-[#FCB87A] rounded-2xl">
+            
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-3 flex flex-col items-center">
+                <img src="Logo.png" alt="Logo" class="w-12 h-12 mb-1">
+                <h1 class="text-2xl font-bold">Uposthithi</h1>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-2 text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] pb-1 mb-1 block hover:underline">Academy</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444] mt-1">
+                    <li><a href="#" class="hover:underline">Class</a></li>
+                    <li><a href="#" class="hover:underline">Syllabus</a></li>
+                    <li><a href="#" class="hover:underline">Massage</a></li>
+                    <li><a href="#" class="hover:underline">Attendance</a></li>
+                    <li><a href="#" class="hover:underline">Applications</a></li>
+                    <li><a href="#" class="hover:underline">Fee</a></li>
+                    <li><a href="#" class="hover:underline">Approve Leave</a></li>
+                    <li><a href="#" class="hover:underline">Classwork and Homework</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl overflow-hidden text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] pb-1 mb-1 block hover:underline">Permission</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444] mt-1">
+                    <li><a href="#" class="hover:underline">Class & Class Teacher Listing</a></li>
+                    <li><a href="#" class="hover:underline">Super User</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl overflow-hidden text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] pb-1 mb-1 block hover:underline">Registration Forms</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444] mt-1">
+                     <div class="bg-[#FF5E1E] text-white text-[10px] py-1.5 font-bold mt-0.5">
+                    <li><a href="#" class="hover:underline">Student</a></li>
+                    </div>
+                    <li><a href="#" class="hover:underline">Teacher</a></li>
+                    <li><a href="#" class="hover:underline">Staff</a></li>
+                    <li><a href="#" class="hover:underline">School Bus</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-2 text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] mb-1 block hover:underline">Class Routing</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444]">
+                    <li><a href="#" class="hover:underline">Regular Class</a></li>
+                    <li><a href="#" class="hover:underline">Proxy Class</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-2 text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] mb-1 block hover:underline">Exam</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444]">
+                    <li><a href="#" class="hover:underline">Exam Routing</a></li>
+                    <li><a href="#" class="hover:underline">Admit Card</a></li>
+                    <li><a href="#" class="hover:underline">Result</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-2 text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] mb-1 block hover:underline">Notice</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444]">
+                    <li><a href="#" class="hover:underline">For Student</a></li>
+                    <li><a href="#" class="hover:underline">For Teacher</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-2 text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] mb-1 block hover:underline">Pay Roll</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444]">
+                    <li><a href="#" class="hover:underline">Student Fee</a></li>
+                    <li><a href="#" class="hover:underline">Teacher & Staff Salary</a></li>
+                </ul>
+            </div>
+        </aside>
+<!-- Main Content right side -->
+        <main class="flex-1 bg-[#FDCE9A]/30 border-2 border-[#FCB87A] rounded-2xl p-6 flex flex-col shadow-sm">
+    
+    <div class="flex flex-col items-center mb-6">
+        <h2 class="text-[#FF5E1E] text-lg font-bold border-b-2 border-[#FF5E1E] inline-block px-12 pb-0.5 mb-4">
+            Registration Forms (Student)
+        </h2>
+        
+        <div class="flex w-full max-w-2xl mb-4">
+            <input type="text" placeholder="Season, Class" 
+                class="flex-1 h-9 px-4 bg-[#FFF5EC] rounded-l-md border border-[#FCB87A] border-r-0 text-[11px] outline-none">
+            <button class="bg-[#FF5E1E] text-white px-10 h-9 rounded-r-md font-bold text-[11px] hover:bg-[#E64D13]">
+                Search
+            </button>
+        </div>
+
+        <button class="w-full max-w-2xl bg-[#FF5E1E] text-white py-1.5 rounded-md font-bold text-[11px] shadow-sm hover:bg-[#E64D13] transition-all">
+            Create New
+        </button>
+    </div>
+
+    <div class="bg-transparent border border-[#FCB87A] rounded-xl p-6 flex flex-col flex-1 overflow-y-auto">
+        <h3 class="text-[#FF5E1E] text-center font-bold text-xl mb-6">Student Registration Form</h3>
+
+        <div class="space-y-2 text-[10px] font-bold text-[#1A1A3D]">
+            
+            <div class="flex gap-2">
+                <div class="flex-[3] flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-16">Name</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-12">Class</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-12">Shift</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-12">Section</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="flex-[2] flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-24">Father's Name</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-20">Occupation</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-16">Number</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="flex-[3] flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-32">Father's Office Address</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-24">Office Number</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="flex-[2] flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-24">Mother's Name</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-20">Occupation</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-16">Number</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="flex-[3] flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-32">Mother's Office Address</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-24">Office Number</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+            </div>
+
+            <div class="flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                <span class="w-32">Present Address</span><input type="text" class="flex-1 outline-none font-normal">
+            </div>
+            <div class="flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                <span class="w-32">Permanent Address</span><input type="text" class="flex-1 outline-none font-normal">
+            </div>
+
+            <div class="flex items-center gap-6 py-2 border-t border-[#FCB87A]/30 mt-4">
+                <span class="text-[12px]">Contract Person :</span>
+                <label class="flex items-center gap-1 cursor-pointer"><input type="checkbox" class="accent-[#FF5E1E]"> Father</label>
+                <label class="flex items-center gap-1 cursor-pointer"><input type="checkbox" class="accent-[#FF5E1E]"> Mother</label>
+                <label class="flex items-center gap-1 cursor-pointer"><input type="checkbox" class="accent-[#FF5E1E]"> Others</label>
+            </div>
+
+            <div class="flex gap-2">
+                <div class="flex-[2] flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-32">Other's Contract Name</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-20">Occupation</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-16">Number</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+            </div>
+
+            <div class="flex gap-2 border-t border-[#FCB87A]/30 pt-2">
+                <div class="flex-[2] flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-32">Emergency Person's Name</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-20">Occupation</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+                <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8">
+                    <span class="w-16">Number</span><input type="text" class="flex-1 outline-none font-normal">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-5 gap-2 border-t border-[#FCB87A]/30 pt-2">
+                <div class="flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8"><span>Nationality</span></div>
+                <div class="flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8"><span>Religion</span></div>
+                <div class="flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8"><span>Gender</span></div>
+                <div class="flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8"><span>Blood Group</span></div>
+                <div class="flex items-center bg-white border border-[#FCB87A] rounded px-2 h-8"><span>Any Disorder</span></div>
+            </div>
+
+            <div class="space-y-2 text-[10px] font-bold text-[#1A1A3D] mt-4 border-t border-[#FCB87A]/30 pt-4">
+
+    <div class="flex gap-2 h-8">
+        <div class="flex-[2] flex items-center bg-white border border-[#FCB87A] rounded px-2">
+            <span class="shrink-0 mr-2">Scholarship on Monthly Fee(Amount)</span>
+            <input type="text" class="flex-1 outline-none font-normal">
+        </div>
+        <div class="flex-1 flex items-center justify-between bg-white border border-[#FCB87A] rounded px-2 text-gray-500 font-normal">
+            <span>January <i class="fa-solid fa-chevron-down text-[#FF5E1E] ml-1"></i></span>
+            <span class="mx-1 text-[#1A1A3D] font-bold">to</span>
+            <span>June <i class="fa-solid fa-chevron-down text-[#FF5E1E] ml-1"></i></span>
+        </div>
+        <div class="flex-[2] flex items-center bg-white border border-[#FCB87A] rounded px-2">
+            <span class="shrink-0 mr-2">Scholarship on Other's Fee</span>
+            <input type="text" class="flex-1 outline-none font-normal">
+        </div>
+        <div class="flex-1 flex items-center justify-between bg-white border border-[#FCB87A] rounded px-2 text-gray-500 font-normal">
+            <span>January <i class="fa-solid fa-chevron-down text-[#FF5E1E] ml-1"></i></span>
+            <span class="mx-1 text-[#1A1A3D] font-bold">to</span>
+            <span>June <i class="fa-solid fa-chevron-down text-[#FF5E1E] ml-1"></i></span>
+        </div>
+    </div>
+
+    <div class="flex gap-2 h-8">
+        <div class="flex-[3] flex items-center bg-white border border-[#FCB87A] rounded px-2">
+            <span class="shrink-0 mr-2">Discount on Registration Fee</span>
+            <input type="text" class="flex-1 outline-none font-normal">
+        </div>
+        <div class="flex-[2] flex items-center bg-white border border-[#FCB87A] rounded px-2">
+            <span class="shrink-0 mr-2">Scholarship on Other's Fee</span>
+            <input type="text" class="flex-1 outline-none font-normal">
+        </div>
+        <div class="flex-1 flex items-center justify-between bg-white border border-[#FCB87A] rounded px-2 text-gray-500 font-normal">
+            <span>January <i class="fa-solid fa-chevron-down text-[#FF5E1E] ml-1"></i></span>
+            <span class="mx-1 text-[#1A1A3D] font-bold">to</span>
+            <span>June <i class="fa-solid fa-chevron-down text-[#FF5E1E] ml-1"></i></span>
+        </div>
+    </div>
+
+    <div class="flex gap-2 h-8 items-center">
+        <div class="w-24 shrink-0 flex items-center gap-1">
+            <input type="checkbox" id="others_fee" class="accent-[#FF5E1E] w-3 h-3">
+            <label for="others_fee" class="cursor-pointer">Other's Fee</label>
+        </div>
+        <div class="flex-[4] flex items-center bg-white border border-[#FCB87A] rounded px-2 h-full">
+            <span class="shrink-0 mr-4">Details</span>
+            <input type="text" class="flex-1 outline-none font-normal">
+        </div>
+        <div class="flex-1 flex items-center bg-white border border-[#FCB87A] rounded px-2 h-full">
+            <span class="shrink-0 mr-4">Fee</span>
+            <input type="text" class="flex-1 outline-none font-normal">
+        </div>
+    </div>
+
+    <div class="pt-4">
+        <button class="w-full bg-[#FFF5EC] border border-[#FCB87A] rounded-md py-1.5 text-gray-400 text-[10px] hover:bg-white hover:text-[#FF5E1E] transition-all shadow-sm">
+            Click here for upload document
+        </button>
+    </div>
+
+    <div class="flex justify-center pt-6">
+        <button class="bg-[#FF5E1E] text-white px-20 py-2 rounded-md font-bold text-[12px] shadow-md hover:bg-[#E64D13] transition-all active:scale-95">
+            Submit
+        </button>
+    </div>
+</div>
+</main>
+    </div>
+    <!--Background BLUR end-->
+    
+<!-- Modal for document upload pop up-->
+   <div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/20 backdrop-blur-sm p-2">
+
+    <div class="bg-[#FED5AE] border-2 border-[#FCB87A] rounded-xl p-3 w-full max-w-5xl shadow-2xl relative overflow-visible">
+        
+        <div class="flex justify-end mb-2">
+            <button class="text-[#FF5E1E] bg-white rounded border border-[#FCB87A] w-5 h-5 flex items-center justify-center hover:bg-gray-100 transition-colors shadow-sm">
+                <i class="fa-solid fa-xmark text-[10px]"></i>
+            </button>
+        </div>
+
+        <div class="grid grid-cols-4 gap-2 mb-3">
+            
+            <div class="bg-transparent border border-[#FCB87A] rounded-lg p-2 flex flex-col gap-1.5">
+                <h4 class="text-[#1A1A3D] text-center font-bold text-[10px]">Student Information</h4>
+                <label class="w-full h-16 bg-white border border-[#FCB87A] rounded flex items-center justify-center cursor-pointer text-center">
+                    <input type="file" class="hidden">
+                    <p class="text-[7px] font-bold text-[#FF5E1E] leading-tight">Drag or click upload<br><span class="text-gray-400 font-normal">Passport image</span></p>
+                </label>
+                <div class="space-y-1">
+                    <div class="text-center"><p class="text-[9px] font-bold text-[#1A1A3D]">Certificated</p>
+                        <label class="block bg-white border border-[#FCB87A] rounded py-0.5 text-[7px] text-[#FF5E1E] cursor-pointer">Click to upload <span class="text-gray-400 font-normal">PDF/Img</span></label></div>
+                    <div class="text-center"><p class="text-[9px] font-bold text-[#1A1A3D]">National Identity</p>
+                        <label class="block bg-white border border-[#FCB87A] rounded py-0.5 text-[7px] text-[#FF5E1E] cursor-pointer">Click to upload <span class="text-gray-400 font-normal">PDF/Img</span></label></div>
+                    <div class="text-center"><p class="text-[9px] font-bold text-[#1A1A3D]">Other's Document</p>
+                        <label class="block bg-white border border-[#FCB87A] rounded py-0.5 text-[7px] text-[#FF5E1E] cursor-pointer">Click to upload <span class="text-gray-400 font-normal">PDF/Img</span></label></div>
+                </div>
+            </div>
+
+            <div class="bg-transparent border border-[#FCB87A] rounded-lg p-2 flex flex-col gap-1.5">
+                <h4 class="text-[#1A1A3D] text-center font-bold text-[10px]">Father's Information</h4>
+                <label class="w-full h-16 bg-white border border-[#FCB87A] rounded flex items-center justify-center cursor-pointer text-center">
+                    <input type="file" class="hidden">
+                    <p class="text-[7px] font-bold text-[#FF5E1E] leading-tight">Drag or click upload<br><span class="text-gray-400 font-normal">Passport image</span></p>
+                </label>
+                <div class="space-y-1">
+                    <div class="text-center"><p class="text-[9px] font-bold text-[#1A1A3D]">Certificated</p>
+                        <label class="block bg-white border border-[#FCB87A] rounded py-0.5 text-[7px] text-[#FF5E1E] cursor-pointer">Click to upload <span class="text-gray-400 font-normal">PDF/Img</span></label></div>
+                    <div class="text-center"><p class="text-[9px] font-bold text-[#1A1A3D]">National Identity</p>
+                        <label class="block bg-white border border-[#FCB87A] rounded py-0.5 text-[7px] text-[#FF5E1E] cursor-pointer">Click to upload <span class="text-gray-400 font-normal">PDF/Img</span></label></div>
+                    <div class="text-center"><p class="text-[9px] font-bold text-[#1A1A3D]">Other's Document</p>
+                        <label class="block bg-white border border-[#FCB87A] rounded py-0.5 text-[7px] text-[#FF5E1E] cursor-pointer">Click to upload <span class="text-gray-400 font-normal">PDF/Img</span></label></div>
+                </div>
+            </div>
+
+            <div class="bg-transparent border border-[#FCB87A] rounded-lg p-2 flex flex-col gap-1.5">
+                <h4 class="text-[#1A1A3D] text-center font-bold text-[10px]">Mother's Information</h4>
+                <label class="w-full h-16 bg-white border border-[#FCB87A] rounded flex items-center justify-center cursor-pointer text-center">
+                    <input type="file" class="hidden">
+                    <p class="text-[7px] font-bold text-[#FF5E1E] leading-tight">Drag or click upload<br><span class="text-gray-400 font-normal">Passport image</span></p>
+                </label>
+                <div class="space-y-1">
+                    <div class="text-center"><p class="text-[9px] font-bold text-[#1A1A3D]">Certificated</p>
+                        <label class="block bg-white border border-[#FCB87A] rounded py-0.5 text-[7px] text-[#FF5E1E] cursor-pointer">Click to upload <span class="text-gray-400 font-normal">PDF/Img</span></label></div>
+                    <div class="text-center"><p class="text-[9px] font-bold text-[#1A1A3D]">National Identity</p>
+                        <label class="block bg-white border border-[#FCB87A] rounded py-0.5 text-[7px] text-[#FF5E1E] cursor-pointer">Click to upload <span class="text-gray-400 font-normal">PDF/Img</span></label></div>
+                    <div class="text-center"><p class="text-[9px] font-bold text-[#1A1A3D]">Other's Document</p>
+                        <label class="block bg-white border border-[#FCB87A] rounded py-0.5 text-[7px] text-[#FF5E1E] cursor-pointer">Click to upload <span class="text-gray-400 font-normal">PDF/Img</span></label></div>
+                </div>
+            </div>
+
+            <div class="bg-transparent border border-[#FCB87A] rounded-lg p-2 flex flex-col gap-1.5">
+                <h4 class="text-[#1A1A3D] text-center font-bold text-[10px]">Other's Information</h4>
+                <label class="w-full h-16 bg-white border border-[#FCB87A] rounded flex items-center justify-center cursor-pointer text-center">
+                    <input type="file" class="hidden">
+                    <p class="text-[7px] font-bold text-[#FF5E1E] leading-tight">Drag or click upload<br><span class="text-gray-400 font-normal">Passport image</span></p>
+                </label>
+                <div class="space-y-1">
+                    <div class="text-center"><p class="text-[9px] font-bold text-[#1A1A3D]">Certificated</p>
+                        <label class="block bg-white border border-[#FCB87A] rounded py-0.5 text-[7px] text-[#FF5E1E] cursor-pointer">Click to upload <span class="text-gray-400 font-normal">PDF/Img</span></label></div>
+                    <div class="text-center"><p class="text-[9px] font-bold text-[#1A1A3D]">National Identity</p>
+                        <label class="block bg-white border border-[#FCB87A] rounded py-0.5 text-[7px] text-[#FF5E1E] cursor-pointer">Click to upload <span class="text-gray-400 font-normal">PDF/Img</span></label></div>
+                    <div class="text-center"><p class="text-[9px] font-bold text-[#1A1A3D]">Other's Document</p>
+                        <label class="block bg-white border border-[#FCB87A] rounded py-0.5 text-[7px] text-[#FF5E1E] cursor-pointer">Click to upload <span class="text-gray-400 font-normal">PDF/Img</span></label></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white/30 border border-[#FCB87A] rounded-lg p-1.5 flex gap-2 items-center mb-3">
+            <div class="flex items-center gap-1.5 flex-1">
+                <label class="text-[9px] font-bold text-[#1A1A3D] shrink-0">Info Name:</label>
+                <input type="text" class="flex-1 h-6 bg-white border border-[#FCB87A] rounded px-2 text-[9px] outline-none shadow-inner">
+            </div>
+            <label class="flex-1 bg-white border border-[#FCB87A] rounded h-6 flex items-center justify-center cursor-pointer text-[8px] text-[#FF5E1E] font-bold">
+                <input type="file" class="hidden">
+                Drag or click here for upload <span class="text-gray-400 font-normal ml-1">(Img/PDF)</span>
+            </label>
+        </div>
+
+        <div class="flex flex-col items-center gap-1.5">
+            <button class="w-full max-w-xs bg-[#FED5AE] border border-[#FCB87A] text-[#FF5E1E] py-1 rounded font-bold text-[9px] shadow-sm hover:bg-white transition-all">
+                Add New Document
+            </button>
+            <button class="bg-[#FF5E1E] text-white px-12 py-1 rounded-md font-bold text-[10px] shadow-md hover:bg-[#E64D13] transition-all">
+                Submit
+            </button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

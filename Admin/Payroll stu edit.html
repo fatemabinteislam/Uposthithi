@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uposthithi - Pay Roll</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-[#fee6ae] min-h-screen p-4 font-sans text-[#1A1A3D]">
+
+    <!-- Background blur -->
+    <div class="fixed inset-0 flex gap-4 max-w-[1440px] mx-auto items-stretch">
+        
+        <!-- Sidebar left one Academic,permission,class routing,Exam,Notice,Payroll -->
+        <aside class="w-64 flex flex-col gap-2 p-2 bg-[#FDCE9A]/20 border-2 border-[#FCB87A] rounded-2xl">
+            
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-3 flex flex-col items-center">
+                <img src="Logo.png" alt="Logo" class="w-12 h-12 mb-1">
+                <h1 class="text-2xl font-bold">Uposthithi</h1>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-2 text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] pb-1 mb-1 block hover:underline">Academy</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444] mt-1">
+                    <li><a href="#" class="hover:underline">Class</a></li>
+                    <li><a href="#" class="hover:underline">Syllabus</a></li>
+                    <li><a href="#" class="hover:underline">Message</a></li>
+                    <li><a href="#" class="hover:underline">Attendance</a></li>
+                    <li><a href="#" class="hover:underline">Applications</a></li>
+                    <li><a href="#" class="hover:underline">Fee</a></li>
+                    <li><a href="#" class="hover:underline">Approve Leave</a></li>
+                    <li><a href="#" class="hover:underline">Classwork and Homework</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl overflow-hidden text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] pb-1 mb-1 block hover:underline">Permission</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444] mt-1">
+                    <li><a href="#" class="hover:underline">Class & Class Teacher Listing</a></li>
+                    <li><a href="#" class="hover:underline">Super User</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl overflow-hidden  text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] pb-1 mb-1 block hover:underline">Registration Forms</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444] mt-1">
+                    <li><a href="#" class="hover:underline">Student</a></li>
+                    <li><a href="#" class="hover:underline">Teacher</a></li>
+                    <li><a href="#" class="hover:underline">Staff</a></li>
+                    <li><a href="#" class="hover:underline">School Bus</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl overflow-hidden text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] pb-1 mb-1 block hover:underline">Class Routing</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444] mt-1">
+                    <li><a href="#" class="hover:underline">Regular Class</a></li>
+                    <li><a href="#" class="hover:underline">Proxy Class</a></li>
+                    
+                    
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl  text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] pb-1 mb-1 block hover:underline">Exam</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444]">
+                    
+                    <li><a href="#" class="hover:underline">Exam Routine</a></li>
+                    <li><a href="#" class="hover:underline">Admit Card</a></li>
+                    <li><a href="#" class="hover:underline">Result</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] pb-1 mb-1 block hover:underline">Notice</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444]">
+                    <li><a href="#" class="hover:underline">For All</a></li>
+                </ul>
+                    
+                
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] pb-1 mb-1 block hover:underline">Pay Roll</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444]">
+                   <div class="bg-[#FF5E1E] text-white text-[10px] py-1.5 font-bold">
+                    <li><a href="#" class="hover:underline">Student Fee</a></li>
+                    </div>
+                    <li><a href="#" class="hover:underline">Teacher & Staff Salary</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main content area payroll student fee right part -->
+      <main class="flex-1 bg-[#FDCE9A]/30 border-2 border-[#FCB87A] rounded-2xl p-6 flex flex-col shadow-sm ">
+    <div class="text-center mb-6">
+        <h2 class="text-[#FF5E1E] text-lg font-bold border-b-2 border-[#FF5E1E] inline-block px-12 pb-0.5">
+            Payroll (Student Fee)
+        </h2>
+    </div>
+
+    <div class="flex justify-center mb-6">
+        <button class="w-full max-w-3xl bg-[#FED5AE] border border-[#FCB87A] text-[#FF5E1E] py-1.5 rounded-md font-bold text-[11px] shadow-sm hover:bg-white transition-all">
+            Create New
+        </button>
+    </div>
+
+    <div class="bg-transparent border border-[#FCB87A] rounded-xl p-6 flex flex-col gap-4 shadow-sm">
+    
+    <div class="flex gap-4">
+        <label class="w-24 shrink-0 text-[10px] font-bold text-[#1A1A3D] mt-2 text-right">Available for :</label>
+        <div class="flex-1 min-h-[40px] bg-white border border-[#FCB87A] rounded-md p-2 flex flex-wrap gap-2 shadow-inner">
+            <span class="bg-[#FED5AE]/40 border border-[#FCB87A] px-2 py-0.5 rounded text-[9px] font-bold text-[#1A1A3D]">5-Lotus</span>
+            <span class="bg-[#FED5AE]/40 border border-[#FCB87A] px-2 py-0.5 rounded text-[9px] font-bold text-[#1A1A3D]">6-Apple</span>
+            <span class="bg-[#FED5AE]/40 border border-[#FCB87A] px-2 py-0.5 rounded text-[9px] font-bold text-[#1A1A3D]">7-Orange</span>
+        </div>
+    </div>
+
+    <div class="flex gap-4">
+        <label class="w-24 shrink-0 text-[10px] font-bold text-[#1A1A3D] mt-2 text-right">Apply Month :</label>
+        <div class="flex-1 min-h-[40px] bg-white border border-[#FCB87A] rounded-md p-2 flex flex-wrap gap-2 shadow-inner">
+            <span class="bg-[#FED5AE]/40 border border-[#FCB87A] px-2 py-0.5 rounded text-[9px] font-bold text-[#1A1A3D]">(January)</span>
+            <span class="bg-[#FED5AE]/40 border border-[#FCB87A] px-2 py-0.5 rounded text-[9px] font-bold text-[#1A1A3D]">(February)</span>
+            <span class="bg-[#FED5AE]/40 border border-[#FCB87A] px-2 py-0.5 rounded text-[9px] font-bold text-[#1A1A3D]">(March)</span>
+        </div>
+    </div>
+
+    <div class="flex gap-4">
+        <label class="w-24 shrink-0 text-[10px] font-bold text-[#1A1A3D] mt-2 text-right">Topic :</label>
+        <div class="flex-1 min-h-[60px] bg-white border border-[#FCB87A] rounded-md p-2 flex flex-wrap gap-2 shadow-inner">
+            <span class="bg-[#FED5AE]/40 border border-[#FCB87A] px-2 py-0.5 rounded text-[9px] font-bold text-[#1A1A3D]">Admission fee</span>
+            <span class="bg-[#FED5AE]/40 border border-[#FCB87A] px-2 py-0.5 rounded text-[9px] font-bold text-[#1A1A3D]">Monthly Fee</span>
+            <span class="bg-[#FED5AE]/40 border border-[#FCB87A] px-2 py-0.5 rounded text-[9px] font-bold text-[#1A1A3D]">Lab Fee</span>
+            <span class="bg-[#FED5AE]/40 border border-[#FCB87A] px-2 py-0.5 rounded text-[9px] font-bold text-[#1A1A3D]">Coaching Fee</span>
+        </div>
+    </div>
+
+    <div class="flex justify-center mt-2">
+        <button class="bg-[#FF5E1E] text-white px-16 py-1.5 rounded-md font-bold text-[11px] shadow-md hover:bg-[#E64D13] transition-all active:scale-95">
+            Edit
+        </button>
+    </div>
+</div>
+
+    <div class="mt-auto pt-6">
+        <div class="w-full bg-[#FFF5EC] rounded-md p-2 px-4 flex items-center justify-between text-[11px] font-bold border border-[#FCB87A] text-[#1A1A3D]">
+            <p>All Class, Section, Shift & Teacher list in Xcel Sheet</p>
+            <div class="flex items-center gap-3">
+                <input type="text" class="w-32 h-7 bg-white border border-[#FCB87A] rounded px-2 outline-none text-center shadow-inner font-normal">
+                <span class="text-[#FF5E1E]">to</span>
+                <input type="text" class="w-32 h-7 bg-white border border-[#FCB87A] rounded px-2 outline-none text-center shadow-inner font-normal">
+            </div>
+            <button class="bg-[#FF5E1E] text-white px-8 py-2 rounded-md font-bold shadow-sm flex items-center gap-2 hover:bg-[#E64D13] transition-all">
+                <i class="fa-solid fa-file-excel"></i> Export & Download
+            </button>
+        </div>
+    </div>
+</main>
+ </div>
+<!--background blur end-->
+
+<!-- Modal for adding new student fee pop up -->
+<div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/10 backdrop-blur-sm p-4">
+
+    <div class="bg-[#FED5AE] border-2 border-[#FCB87A] rounded-xl p-6 w-full max-w-4xl shadow-2xl relative overflow-hidden">
+        
+        <div class="absolute top-2.5 right-2.5">
+            <button class="text-[#FF5E1E] bg-white rounded border border-[#FCB87A] w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition-colors shadow-sm">
+                <i class="fa-solid fa-xmark text-[11px]"></i>
+            </button>
+        </div>
+
+        <h2 class="text-[#FF5E1E] text-center font-bold text-base mb-4">
+            Add New Student Fee
+        </h2>
+
+        <div class="space-y-3 text-[10px] font-bold text-[#1A1A3D] mb-4">
+            
+            <div class="flex gap-4">
+                <label class="w-24 shrink-0 mt-2">Available for :</label>
+                <div class="flex-1 min-h-[40px] bg-white border border-[#FCB87A] rounded-md p-1.5 flex flex-wrap gap-2 shadow-inner">
+                    <span class="bg-[#FED5AE] border border-[#FCB87A] px-2 py-0.5 rounded flex items-center gap-2">5-Lotus <i class="fa-solid fa-xmark text-[7px] cursor-pointer"></i></span>
+                    <span class="bg-[#FED5AE] border border-[#FCB87A] px-2 py-0.5 rounded flex items-center gap-2">6-Apple <i class="fa-solid fa-xmark text-[7px] cursor-pointer"></i></span>
+                    <span class="bg-[#FED5AE] border border-[#FCB87A] px-2 py-0.5 rounded flex items-center gap-2">7-Orange <i class="fa-solid fa-xmark text-[7px] cursor-pointer"></i></span>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <label class="w-24 shrink-0 mt-2">Apply Month :</label>
+                <div class="flex-1 min-h-[40px] bg-white border border-[#FCB87A] rounded-md p-1.5 flex flex-wrap gap-2 shadow-inner">
+                    <span class="bg-[#FED5AE] border border-[#FCB87A] px-2 py-0.5 rounded flex items-center gap-2">(January) <i class="fa-solid fa-xmark text-[7px] cursor-pointer"></i></span>
+                    <span class="bg-[#FED5AE] border border-[#FCB87A] px-2 py-0.5 rounded flex items-center gap-2">(February) <i class="fa-solid fa-xmark text-[7px] cursor-pointer"></i></span>
+                    <span class="bg-[#FED5AE] border border-[#FCB87A] px-2 py-0.5 rounded flex items-center gap-2">(March) <i class="fa-solid fa-xmark text-[7px] cursor-pointer"></i></span>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 flex-wrap bg-[#FFF5EC]/40 p-2 border border-[#FCB87A] rounded-lg">
+                <span>Dateline :</span>
+                <span class="font-normal text-gray-500">Working Days of First</span>
+                <input type="text" placeholder="Days Number" class="w-20 h-6 bg-white border border-[#FCB87A] rounded px-2 outline-none text-center">
+                <span>days To</span>
+                <input type="text" placeholder="Days Number" class="w-20 h-6 bg-white border border-[#FCB87A] rounded px-2 outline-none text-center">
+                <span>days</span>
+                
+                <span class="ml-4">Late Fee :</span>
+                <input type="text" value="100" class="w-12 h-6 bg-white border border-[#FCB87A] rounded px-1 outline-none text-center">
+                
+                <span class="ml-4">Absent Fee :</span>
+                <input type="text" value="50 taka" class="w-16 h-6 bg-white border border-[#FCB87A] rounded px-1 outline-none text-center">
+            </div>
+        </div>
+
+        <div class="space-y-1.5 mb-6">
+            <div class="flex gap-2 px-1 text-[9px] font-bold text-gray-500">
+                <span class="w-8"></span><span class="flex-1 text-center">Topic</span><span class="w-24 text-center">Amount</span>
+            </div>
+            
+            <div class="space-y-1 max-h-48 overflow-y-auto pr-1">
+                <div class="flex items-center gap-2">
+                    <span class="w-8 h-6 flex items-center justify-center bg-white border border-[#FCB87A] rounded text-[9px] font-bold">01.</span>
+                    <input type="text" placeholder="Topic" class="flex-1 h-6 bg-white border border-[#FCB87A] rounded px-3 outline-none text-[9px] shadow-inner">
+                    <input type="text" placeholder="Amount" class="w-24 h-6 bg-white border border-[#FCB87A] rounded px-3 outline-none text-[9px] text-center shadow-inner">
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="w-8 h-6 flex items-center justify-center bg-white border border-[#FCB87A] rounded text-[9px] font-bold">02.</span>
+                    <input type="text" class="flex-1 h-6 bg-white border border-[#FCB87A] rounded px-3 shadow-inner">
+                    <input type="text" class="w-24 h-6 bg-white border border-[#FCB87A] rounded shadow-inner">
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="w-8 h-6 flex items-center justify-center bg-white border border-[#FCB87A] rounded text-[9px] font-bold">03.</span>
+                    <input type="text" class="flex-1 h-6 bg-white border border-[#FCB87A] rounded px-3 shadow-inner">
+                    <input type="text" class="w-24 h-6 bg-white border border-[#FCB87A] rounded shadow-inner">
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="w-8 h-6 flex items-center justify-center bg-white border border-[#FCB87A] rounded text-[9px] font-bold">04.</span>
+                    <input type="text" class="flex-1 h-6 bg-white border border-[#FCB87A] rounded px-3 shadow-inner">
+                    <input type="text" class="w-24 h-6 bg-white border border-[#FCB87A] rounded shadow-inner">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <button class="bg-[#FF5E1E] text-white px-20 py-1.5 rounded-md font-bold text-[11px] shadow-md hover:bg-[#E64D13] transition-all active:scale-95">
+                Submit
+            </button>
+        </div>
+
+    </div>
+  </div>
+
+   
+
+</body>
+</html>  
