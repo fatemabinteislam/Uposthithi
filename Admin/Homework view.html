@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uposthithi - Homework View</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-[#fee6ae] min-h-screen p-4 font-sans text-[#1A1A3D]">
+
+    <!-- Sidebar left one Academic,permission,class routing,Exam,Notice,Payroll -->
+    <div class="flex gap-4 max-w-[1440px] mx-auto items-stretch">
+        
+        <aside class="w-64 bg-[#f2cfa7] border-2 border-[#FCB87A] rounded-2xl p-2 flex flex-col gap-2">
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-3 flex flex-col items-center">
+                <img src="Logo.png" alt="Logo" class="w-12 h-12 mb-1">
+                <h1 class="text-2xl font-bold">Uposthithi</h1>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl overflow-hidden text-center">
+                <p class="text-[#FF5E1E] font-bold text-[11px] py-1 block">Academy</p>
+                  <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444]">
+                    <li><a href="#" class="hover:underline">Class</a></li>
+                    <li><a href="#" class="hover:underline">Syllabus</a></li>
+                    <li><a href="#" class="hover:underline">Message</a></li>
+                    <li><a href="#" class="hover:underline">Attendance</a></li>
+                    <li><a href="#" class="hover:underline">Applications</a></li>
+                    <li><a href="#" class="hover:underline">Fee</a></li>
+                    <li><a href="#" class="hover:underline">Approve Leave</a></li>
+                 <div class="bg-[#FF5E1E] text-white text-[10px] py-1.5 font-bold mt-0.5">
+                    <li><a href="#" class="hover:underline">Class work and Homework</a></li>
+                </div>
+
+                  </ul>
+            </div>
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-2 text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] mb-1 block">Permission</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444]">
+                    <li><a href="#" class="hover:underline">Class & Class Teacher Listing</a></li>
+                    <li><a href="#" class="hover:underline">Supper User</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-2 text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] pb-1 mb-1 ">Registration Forms</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444] mt-1">
+                    <li><a href="#" class="hover:underline">Student</a></li>
+                    <li><a href="#" class="hover:underline">Teacher</a></li>
+                    <li><a href="#" class="hover:underline">Staff</a></li>
+                    <li><a href="#" class="hover:underline">School Bus</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-2 text-center text-[10px] font-bold text-[#FF8444]">
+                <a href="#" class="text-[#FF5E1E] text-xs border-b border-[#FCB87A] pb-1 mb-1 block">Class Routing</a>
+                <a href="#" class="hover:underline block">Regular Class</a><a href="#" class="hover:underline block">Proxy Class</a>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-2 text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] mb-1 block">Exam</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444]">
+                    <li><a href="#" class="hover:underline">Exam Routing</a></li>
+                    <li><a href="#" class="hover:underline">Admit Card</a></li>
+                    <li><a href="#" class="hover:underline">Result</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-2 text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] mb-1 block">Notice</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444]">
+                    <li><a href="#" class="hover:underline">For Student</a></li>
+                    <li><a href="#" class="hover:underline">For Teacher</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-[#FDCE9A] border border-[#FCB87A] rounded-xl p-2 text-center">
+                <a href="#" class="text-[#FF5E1E] font-bold text-[11px] border-b border-[#FCB87A] mb-1 block">Pay Roll</a>
+                <ul class="text-[10px] font-bold space-y-0.5 text-[#FF8444]">
+                    <li><a href="#" class="hover:underline">Student Fee</a></li>
+                    <li><a href="#" class="hover:underline">Teacher & Staff Salary</a></li>
+                </ul>
+            </div>
+
+            </aside>
+
+           <!-- main content homework right part  -->
+
+         <main class="flex-1 bg-[#FDCE9A]/30 border-2 border-[#FCB87A] rounded-2xl p-6 flex flex-col shadow-sm">
+    
+    <div class="flex flex-col items-center mb-6">
+        <h2 class="text-[#FF5E1E] text-lg font-bold border-b-2 border-[#FF5E1E] inline-block px-12 pb-0.5 mb-4">
+            Class Work & Home Work
+        </h2>
+        <div class="flex bg-white rounded-md border border-[#FCB87A] overflow-hidden">
+            <button class="bg-[#FF5E1E] text-white px-8 py-1.5 text-xs font-bold">Class Work</button>
+            <button class="bg-white text-[#FF5E1E] px-8 py-1.5 text-xs font-bold">Home Work</button>
+        </div>
+    </div>
+
+    <div class="bg-transparent border border-[#FCB87A] rounded-xl p-6 flex flex-col flex-1">
+        <h3 class="text-[#FF5E1E] text-center font-bold text-xl mb-4">Home Work</h3>
+
+          <div class="flex items-center gap-2 mb-6 w-full">
+    
+    <div class="flex-1 bg-white border border-[#FCB87A] rounded h-9 flex items-center px-2 text-[10px] font-bold whitespace-nowrap shadow-sm">
+        Date : <span class="ml-1 text-gray-500 font-normal"></span>
+    </div>
+
+    <div class="flex-1 bg-white border border-[#FCB87A] rounded h-9 flex items-center px-2 text-[10px] font-bold whitespace-nowrap shadow-sm">
+        Shift : <span class="ml-1 text-gray-500 font-normal"></span>
+    </div>
+
+    <div class="flex-1 bg-white border border-[#FCB87A] rounded h-9 flex items-center px-2 text-[10px] font-bold whitespace-nowrap shadow-sm">
+        Class : <span class="ml-1 text-gray-500 font-normal"></span>
+    </div>
+
+    <div class="flex-1 bg-white border border-[#FCB87A] rounded h-9 flex items-center px-2 text-[10px] font-bold whitespace-nowrap shadow-sm">
+        Subject : <span class="ml-1 text-gray-500 font-normal"></span>
+    </div>
+
+    <div class="flex-1 bg-white border border-[#FCB87A] rounded h-9 flex items-center px-2 text-[10px] font-bold whitespace-nowrap shadow-sm">
+        Section : <span class="ml-1 text-gray-500 font-normal"></span>
+    </div>
+
+    <div class="flex-1 bg-white border border-[#FCB87A] rounded h-9 flex items-center px-2 text-[10px] font-bold whitespace-nowrap shadow-sm">
+        Status : <span class="ml-1 text-green-600 font-bold uppercase tracking-tighter"></span>
+    </div>
+
+</div>
+
+        <div class="flex justify-center mb-10">
+            <div class="flex w-full max-w-2xl">
+                <input type="text" placeholder="Name, Id Number, Season, Class" 
+                    class="flex-1 h-9 px-4 bg-[#FFF5EC] rounded-l-md border border-[#FCB87A] border-r-0 text-[11px] outline-none">
+                <button class="bg-[#FF5E1E] text-white px-10 h-9 rounded-r-md font-bold text-[11px] flex items-center gap-2">
+                    <i class="fa-solid fa-magnifying-glass"></i> Search
+                </button>
+            </div>
+        </div>
+
+        <div class="flex gap-4 items-start flex-wrap">
+            
+            <div class="w-44 bg-white/60 border border-[#FCB87A] rounded-lg p-2 shadow-sm relative">
+                <div class="text-[8px] font-bold text-[#1A1A3D] mb-1 leading-tight">
+                    <p>Uploaded by: <span class="font-normal text-gray-600">Sumaiya Islam</span></p>
+                    <p>Time: <span class="font-normal text-gray-600">5:40 PM</span></p>
+                </div>
+                <div class="aspect-square bg-white border border-[#FCB87A] rounded overflow-hidden">
+                    <img src="classroom_image.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-10 right-3 flex flex-col gap-1">
+                    <button class="bg-white/90 w-6 h-6 rounded border border-[#FCB87A] text-[#FF5E1E] shadow-sm flex items-center justify-center">
+                        <i class="fa-solid fa-eye text-[10px]"></i>
+                    </button>
+                    <button class="bg-white/90 w-6 h-6 rounded border border-[#FCB87A] text-red-500 shadow-sm flex items-center justify-center">
+                        <i class="fa-solid fa-trash text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="ml-auto">
+                <label class="w-24 h-24 border-2 border-dashed border-[#FF5E1E] rounded-xl flex flex-col items-center justify-center cursor-pointer hover:bg-orange-50 transition-all">
+                    <input type="file" class="hidden">
+                    <div class="bg-[#FF5E1E] w-10 h-10 rounded-lg text-white mb-1 shadow-sm flex items-center justify-center">
+                        <i class="fa-solid fa-cloud-arrow-up text-xl"></i>
+                    </div>
+                    <span class="text-[9px] font-bold text-[#FF5E1E]">Upload Image</span>
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mt-auto pt-10">
+        <div class="w-full bg-[#FFF5EC] rounded-md p-2 flex items-center justify-between text-[11px] font-bold border border-[#FCB87A]">
+            <p>All Class, Section, Shift & Teacher list in Xcel Sheet</p>
+            <div class="flex items-center gap-2">
+                <input type="text" placeholder="From" class="w-32 bg-white border border-[#FCB87A] rounded p-1 outline-none text-center h-7">
+                <i class="fa-solid fa-arrow-right text-[#FF5E1E] text-[10px]"></i>
+                <input type="text" placeholder="To" class="w-32 bg-white border border-[#FCB87A] rounded p-1 outline-none text-center h-7">
+            </div>
+            <button class="bg-[#FF5E1E] text-white px-8 py-1.5 rounded-md font-bold shadow-sm flex items-center gap-2">
+                <i class="fa-solid fa-file-excel"></i> Export & Download
+            </button>
+        </div>
+    </div>
+</main>
+         
+</body>
+</html>
